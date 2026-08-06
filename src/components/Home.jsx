@@ -14,10 +14,7 @@ const Home = () => {
           the morning
         </p>
 
-        <div className=" flex flex-row gap-6">
-          <Button title="ADD TO CART" />
-          <Button title="MORE MENU" />
-        </div>
+     
       </div>
 
       <div className="relative">

@@ -1,29 +1,63 @@
-import React from "react";
-import img1 from "../assets/img/menu1.jpg";
-import img2 from "../assets/img/menu2.jpg";
-import img3 from "../assets/img/menu3.jpg";
-import img4 from "../assets/img/menu4.jpg";
-import img5 from "../assets/img/menu5.jpg";
-import img6 from "../assets/img/menu6.jpg";
-import MenuCard from "../layouts/MenuCard";
+// Menu.jsx
+import React, { useState } from "react";
+import { menuData, categories } from "./MenuData";
+import "./menu.css";
 
-const Menu = () => {
+function MenuItem({ item, onAdd }) {
   return (
-    <div className=" min-h-screen flex flex-col justify-center lg:px-32 px-5 bg-backgroundColor">
-      <h1 className=" font-semibold text-center text-4xl mt-24 mb-8">
-        Our Menu
-      </h1>
-
-      <div className=" flex flex-wrap pb-8 gap-8 justify-center">
-        <MenuCard img={img1} title="Espresso" />
-        <MenuCard img={img2} title="Cappuccino" />
-        <MenuCard img={img3} title="Latte" />
-        <MenuCard img={img4} title="Americano" />
-        <MenuCard img={img5} title="Macchiato" />
-        <MenuCard img={img6} title="Doppio" />
-      </div>
+    <div className="menu-item">
+      <div className="item-name">{item.name}</div>
+      <div className="item-price">{item.price.toLocaleString()} تومان</div>
+      <button onClick={() => onAdd(item)}>افزودن</button>
     </div>
   );
-};
+}
 
-export default Menu;
+export default function Menu() {
+  const [active, setActive] = useState("shakes");
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (item) => setCart((s) => [...s, item]);
+
+  const total = cart.reduce((sum, it) => sum + it.price, 0);
+
+  return (
+    <div className="menu-container" dir="rtl" >
+      <nav className="category-nav">
+        {categories.map((c) => (
+          <button
+            key={c.id}
+            className={c.id === active ? "active" : ""}
+            onClick={() => setActive(c.id)}
+          >
+            {c.label}
+          </button>
+        ))}
+      </nav>
+      <br />
+
+      <section className="items-list">
+        <h2>{menuData[active].title}</h2>
+        {menuData[active].items.map((it) => (
+          <MenuItem key={it.id} item={it} onAdd={addToCart} />
+        ))}
+      </section>
+
+      <aside className="cart">
+        <h3>سبد خرید</h3>
+        {cart.length === 0 ? (
+          <div>خالی</div>
+        ) : (
+          <ul>
+            {cart.map((it, idx) => (
+              <li key={idx}>
+                {it.name} — {it.price.toLocaleString()} تومان
+              </li>
+            ))}
+          </ul>
+        )}
+        <div className="total">مجموع: {total.toLocaleString()} تومان</div>
+      </aside>
+    </div>
+  );
+}

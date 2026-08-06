@@ -1,0 +1,9 @@
+.menu-container { display: grid; grid-template-columns: 1fr ; gap: 20px; font-family: "Vazirmatn", sans-serif; }
+.category-nav { display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end; margin-bottom:12px; }
+.category-nav button { padding:8px 12px; border-radius:8px; border:1px solid #ddd; background:#fff; cursor:pointer; }
+.category-nav button.active { background:#222; color:#fff; }
+.items-list { background:#fff; padding:16px; border-radius:8px; }
+.menu-item { display:flex; justify-content:space-evenly; align-items:center; padding:8px 0; border-bottom:1px dashed #eee; }
+.menu-item button { padding:6px 10px; border-radius:6px; background:#0070f3; color:#fff; border:none; cursor:pointer; }
+.cart { background:#fafafa; padding:12px; border-radius:8px; }
+.total { margin-top:12px; font-weight:700; }

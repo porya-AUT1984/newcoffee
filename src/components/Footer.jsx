@@ -5,11 +5,11 @@ const Footer = () => {
     <div className=" bg-gradient-to-r from-[#FFDCAB] to-[#AB6B2E] text-black rounded-t-3xl mt-8 md:mt-0">
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
         <div className=" w-full md:w-1/4">
-          <h1 className=" font-semibold text-xl pb-4">CafePulse</h1>
-          <p className=" text-sm">
-            Welcome to our coffee haven! Explore our aromatic brews, savor
-            artisanal flavors, and discover the perfect roast to elevate your
-            daily ritual.
+          <h1 className=" font-semibold text-xl pb-4">CafeَAshvan</h1>
+          <p className=" text-sm">      کافه اشوان از سال ۱۳۹۰ با هدف ارائه بهترین قهوه‌ها و غذاهای سالم 
+              شروع به کار کرد. ما با استفاده از تازه‌ترین مواد اولیه و دانه‌های 
+              قهوه با کیفیت، لحظات خوشی را برای شما رقم می‌زنیم.
+          
           </p>
         </div>
         <div>
@@ -41,29 +41,7 @@ const Footer = () => {
             </a>
           </nav>
         </div>
-        <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Menu</h1>
-          <nav className=" flex flex-col gap-2">
-            <a
-              className=" hover:text-backgroundColor transition-all cursor-pointer"
-              href="/"
-            >
-              Cappuccino
-            </a>
-            <a
-              className=" hover:text-backgroundColor transition-all cursor-pointer"
-              href="/"
-            >
-              Latte
-            </a>
-            <a
-              className=" hover:text-backgroundColor transition-all cursor-pointer"
-              href="/"
-            >
-              Americano
-            </a>
-          </nav>
-        </div>
+        
         <div>
           <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Contact Us</h1>
           <nav className=" flex flex-col gap-2">
@@ -71,19 +49,20 @@ const Footer = () => {
               className=" hover:text-backgroundColor transition-all cursor-pointer"
               href="/"
             >
-              CafePulse@email.com
+              Cafeashvane@email.com
             </a>
             <a
               className=" hover:text-backgroundColor transition-all cursor-pointer"
               href="/"
             >
-              +84 958 248 966
+              09184265432
             </a>
             <a
               className=" hover:text-backgroundColor transition-all cursor-pointer"
               href="/"
             >
-              Social media
+              
+              📍فرهنگیان فاز 2 ایستگاه 9 انتهای خیابان سلمان فارسی بر کشمیر
             </a>
           </nav>
         </div>
@@ -94,7 +73,7 @@ const Footer = () => {
             @copyright developed by
             <span className=" text-backgroundColor">
               {" "}
-              champion programmers{" "}
+              IT-develper{" "}
             </span>
             | All rights reserved
           </p>
