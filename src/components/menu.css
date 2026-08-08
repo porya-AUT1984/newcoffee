@@ -4,8 +4,6 @@
 .category-nav button.active { background:#222; color:#fff; }
 .items-list {  padding:16px; border-radius:8px;  font-size: 22px ; text-align: center; margin-bottom: 10px;}
 .menu-item { padding:8px 0; border-bottom:1px dashed #eee; }
-.menu-item:hover{ background-color: rgb(209, 130, 10);}
 .menu-item button { padding:6px 10px; border-radius:6px; background:#0070f3; color:#fff; border:none; cursor:pointer; }
 .cart { background:#fafafa; padding:12px; border-radius:8px; }
 .total { margin-top:12px; font-weight:700; }
-      
