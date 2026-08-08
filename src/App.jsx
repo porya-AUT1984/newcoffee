@@ -21,12 +21,6 @@ const App = () => {
         <div id="menu">
           <Menu />
         </div>
-
-        <div id="about">
-          <About />
-        </div>
-
-        
       </main>
 
       <Footer />

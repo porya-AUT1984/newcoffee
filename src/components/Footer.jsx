@@ -6,11 +6,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
         <div className=" w-full md:w-1/4">
           <h1 className=" font-semibold text-xl pb-4">CafeَAshvan</h1>
-          <p className=" text-sm">      کافه اشوان از سال ۱۳۹۰ با هدف ارائه بهترین قهوه‌ها و غذاهای سالم 
-              شروع به کار کرد. ما با استفاده از تازه‌ترین مواد اولیه و دانه‌های 
-              قهوه با کیفیت، لحظات خوشی را برای شما رقم می‌زنیم.
-          
-          </p>
+
         </div>
         <div>
           <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Links</h1>
@@ -49,7 +45,7 @@ const Footer = () => {
               className=" hover:text-backgroundColor transition-all cursor-pointer"
               href="/"
             >
-              Cafeashvane@email.com
+              @cafe._ashvan
             </a>
             <a
               className=" hover:text-backgroundColor transition-all cursor-pointer"

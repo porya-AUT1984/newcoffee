@@ -139,7 +139,7 @@ export const menuData = {
       { id: "cakes", label: "🍰 کیک" },
       { id: "breakfast", label: "🍳 صبحانه" },
       { id: "snacks", label: "🍟 پیش غذا" },
-      { id: "hookah", label: "💨 قلیان" },
+      { id: "hookah", label: "😮‍💨 قلیان" },
       { id: "coffee", label: "☕ قهوه" },
       { id: "tea", label: "🍵 چای" }
     ];

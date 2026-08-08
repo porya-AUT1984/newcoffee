@@ -175,8 +175,8 @@ function CategoryNav() {
   };
 
   return (
-    <section id="menu" className="py-5" style={{ backgroundColor: "#0a0a0a" }}>
-      <div className="container">
+    <section id="menu" className="py-5" style={{ backgroundColor: "#0a0a0a",}}>
+      <div className="container ">
         <h2
           className="text-center display-4 fw-bold mb-3"
           style={{ color: "#d4a0e0" }}
@@ -187,9 +187,9 @@ function CategoryNav() {
           انتخاب کنید از میان طعم‌های خاص
         </p>
 
-        <div className="position-relative mb-4">
+        <div className="mb-4 ">
           <button
-            className="btn btn-light shadow-sm position-absolute start-0 top-50 translate-middle-y z-1"
+            className="btn btn-light shadow-sm start-0 top-50 translate-middle-y z-1"
             onClick={scrollLeft}
             style={{
               borderRadius: "50%",
@@ -209,6 +209,7 @@ function CategoryNav() {
               scrollbarWidth: "thin",
               msOverflowStyle: "none",
               background: "linear-gradient(135deg, #1a0a2e, #2c0a3e, #1a0a2e)",
+              
             }}
           >
             {categories.map((cat) => (
@@ -264,6 +265,7 @@ function CategoryNav() {
                       background: "rgba(255,255,255,0.05)",
                       color: "white",
                       backdropFilter: "blur(10px)",
+                     
                     }}
                   >
                     <div className="card-body">

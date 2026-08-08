@@ -5,11 +5,14 @@ import "./menu.css";
 
 function MenuItem({ item, onAdd }) {
   return (
-    <div className="menu-item">
-      <div className="item-name">{item.name}</div>
-      <div className="item-price">{item.price.toLocaleString()} تومان</div>
-      <button onClick={() => onAdd(item)}>افزودن</button>
-    </div>
+    <tr className="menu-item">
+      <td className="item-name">{item.name}</td>
+      <td className="item-price">{item.price.toLocaleString()} تومان</td>
+      <td>
+        {" "}
+        <button onClick={() => onAdd(item)}>افزودن</button>
+      </td>
+    </tr>
   );
 }
 
@@ -22,8 +25,8 @@ export default function Menu() {
   const total = cart.reduce((sum, it) => sum + it.price, 0);
 
   return (
-    <div className="menu-container" dir="rtl" >
-      <nav className="category-nav">
+    <div className="menu-container" dir="rtl">
+      <nav className="category-nav  mx-auto ">
         {categories.map((c) => (
           <button
             key={c.id}
@@ -38,9 +41,11 @@ export default function Menu() {
 
       <section className="items-list">
         <h2>{menuData[active].title}</h2>
-        {menuData[active].items.map((it) => (
-          <MenuItem key={it.id} item={it} onAdd={addToCart} />
-        ))}
+        <table style={{width:"100%"}}>
+          {menuData[active].items.map((it) => (
+            <MenuItem key={it.id} item={it} onAdd={addToCart} />
+          ))}
+        </table>
       </section>
 
       <aside className="cart">
