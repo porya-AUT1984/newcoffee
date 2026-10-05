@@ -2,7 +2,7 @@ export const menuData = {
       shakes: {
         title: "🥤 شیک‌ها",
         items: [
-          { id: 1, name: "شیک وانيل", price: 180 },
+          { id: 1, name: "شیک وانيل", price: 190 },
           { id: 2, name: "شیك شكلاتی", price: 190 },
           { id: 3, name: "شیک توت فرنگی", price: 190 },
           { id: 4, name: "شیک بيسكویتی", price: 180 },
