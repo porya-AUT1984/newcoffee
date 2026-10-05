@@ -3,22 +3,22 @@ export const menuData = {
   shakes: {
     title: "🥤 شیک‌ها",
     items: [
-      { id: 1, name: "شیک وانيل", price: 190 },
-      { id: 2, name: "شیك شكلاتی", price: 200 },
-      { id: 3, name: "شیک توت فرنگی", price: 200 },
-      { id: 4, name: "شیک بيسكویتی", price: 190 },
-      { id: 5, name: "شیک كافی", price: 250 },
-      { id: 6, name: "شیک لوتوس", price: 210 },
-      { id: 7, name: "شیک نسکافه ای", price: 190 },
-      { id: 8, name: "شیک براونی", price: 230 },
-      { id: 9, name: "شیک M&M", price: 210 },
-      { id: 10, name: "شیک کوکی", price: 200 },
-      { id: 11, name: "شیک مخصوص", price: 290 },
-      { id: 12, name: "فراپه تیرامیسو", price: 290 },
-      { id: 13, name: "دالگونا توت فرنگی", price: 210 },
-      { id: 14, name: "دالگونا اورئو", price: 210 },
-      { id: 15, name: "دالگونا چی پف", price: 210 },
-      { id: 16, name: "آیس دالگونا چی پف", price: 210 },
+      { id: 1, name: "شیک وانيل", price: 210 },
+      { id: 2, name: "شیك شكلاتی", price: 220 },
+      { id: 3, name: "شیک توت فرنگی", price: 220 },
+      { id: 4, name: "شیک بيسكویتی", price: 210 },
+      { id: 5, name: "شیک كافی", price: 270 },
+      { id: 6, name: "شیک لوتوس", price: 230 },
+      { id: 7, name: "شیک نسکافه ای", price: 210 },
+      { id: 8, name: "شیک براونی", price: 250 },
+      { id: 9, name: "شیک M&M", price: 230 },
+      { id: 10, name: "شیک کوکی", price: 220 },
+      { id: 11, name: "شیک مخصوص", price: 310 },
+      { id: 12, name: "فراپه تیرامیسو", price: 310 },
+      { id: 13, name: "دالگونا توت فرنگی", price: 230 },
+      { id: 14, name: "دالگونا اورئو", price: 230 },
+      { id: 15, name: "دالگونا چی پف", price: 230 },
+      { id: 16, name: "آیس دالگونا چی پف", price: 230 },
     ],
   },
   smoothies: {
@@ -79,8 +79,8 @@ export const menuData = {
     title: "☕ قهوه‌ها",
     items: [
       { id: 46, name: "اسپرسو تونیک", price: 270 },
-      { id: 47, name: "اسپرسو دوبل", price: 120 },
-      { id: 48, name: "اسپرسو تک", price: 100 },
+      { id: 47, name: "اسپرسو دوبل", price: 130 },
+      { id: 48, name: "اسپرسو تک", price: 120 },
       { id: 49, name: "آمریکانو", price: 130 },
       { id: 50, name: "کاپوچینو", price: 170 },
       { id: 51, name: "اسپرسو کن پانا", price: 150 },
@@ -144,7 +144,7 @@ export const categories = [
   { id: "coffee", label: "☕ قهوه" },
   { id: "tea", label: "🍵 چای" },
 ];
-=======
+
       shakes: {
         title: "🥤 شیک‌ها",
         items: [
@@ -188,9 +188,9 @@ export const categories = [
         title: "🍰 کیک‌ها",
         items: [
           { id: 30, name: "كوكى", price: 90 },
-          { id: 31, name: "كيك بستنى وانیلی", price: 230 },
-          { id: 32, name: "كيك بستنى شکلاتی", price: 230 },
-          { id: 33, name: "كيك بستنى توت فرنگی", price: 240 },
+          { id: 31, name: "كيك بستنى وانیلی", price: 240 },
+          { id: 32, name: "كيك بستنى شکلاتی", price: 240 },
+          { id: 33, name: "كيك بستنى توت فرنگی", price: 250 },
           { id: 34, name: "كيك خيس شکلاتي", price: 150 }
         ]
       },
@@ -207,8 +207,8 @@ export const categories = [
         title: "🍟 پیش غذا",
         items: [
           { id: 39, name: "اسنک پنینی", price: 150 },
-          { id: 40, name: "چیپس پنیری", price: 130 },
-          { id: 41, name: "چیپس پنیری مخصوص", price: 180 },
+          { id: 40, name: "چیپس پنیری", price: 150 },
+          { id: 41, name: "چیپس پنیری مخصوص", price: 200 },
           { id: 42, name: "سیب سرخ شده", price: 150 },
           { id: 43, name: "سیب سرخ شده مخصوص", price: 240 }
         ]
@@ -224,16 +224,17 @@ export const categories = [
         title: "☕ قهوه‌ها",
         items: [
           { id: 46, name: "اسپرسو تونیک", price: 190 },
-          { id: 47, name: "اسپرسو دوبل", price: 120 },
-          { id: 48, name: "اسپرسو تک", price: 100 },
-          { id: 49, name: "آمریکانو", price: 130 },
+          { id: 47, name: "اسپرسو دوبل", price: 130 },
+          { id: 48, name: "اسپرسو تک", price: 120 },
+          { id: 48, name: "کورتادو", price: 160 },
+          { id: 49, name: "آمریکانو", price: 140 },
           { id: 50, name: "کاپوچینو", price: 150 },
           { id: 51, name: "اسپرسو کن پانا", price: 150 },
           { id: 52, name: "وایت کافی چاکلت", price: 150 },
-          { id: 53, name: "لاته", price: 170 },
-          { id: 54, name: "بلک لاته", price: 180 },
-          { id: 55, name: "آیس لاته", price: 170 },
-          { id: 56, name: "آیریشن لاته", price: 180 },
+          { id: 53, name: "لاته", price: 200 },
+          { id: 54, name: "بلک لاته", price: 200 },
+          { id: 55, name: "آیس لاته", price: 200 },
+          { id: 56, name: "آیریشن لاته", price: 200 },
           { id: 57, name: "موکا (ماکیاتو)", price: 190 },
           { id: 58, name: "آیس موکا ترک", price: 190 },
           { id: 59, name: "آیس موکا فرانسه", price: 150 },
