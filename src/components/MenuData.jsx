@@ -1,5 +1,4 @@
 export const menuData = {
-
   shakes: {
     title: "🥤 شیک‌ها",
     items: [
@@ -63,7 +62,7 @@ export const menuData = {
     items: [
       { id: 39, name: "اسنک پنیری", price: 200 },
       { id: 40, name: "چیپس پنیری", price: 170 },
-      { id: 41, name: "چیپس پنیری مخصوص", price: 180 },
+      { id: 41, name: "چیپس پنیری مخصوص", price: 220 },
       { id: 42, name: "سیب سرخ شده", price: 170 },
       { id: 43, name: "سیب سرخ شده مخصوص", price: 250 },
     ],
